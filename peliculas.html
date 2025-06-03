@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todas las pelis</title>
     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,9 +21,10 @@
     <nav>
         <ul class="menu">
             <li><a href="index.html"> Inicio</a></li>
-            <li><a href="file:///C:/Trabajo%20final/proximo.html">Proximos Estrenos </a></li>
+            <li><a href="proximosEstrenos.html">Proximos Estrenos </a></li>
             <li><a href="peliculas.html">Peliculas</a></li>
-            <li><a href="file:///C:/Trabajo%20final/nosotros.html">Nosotros</a></li>
+            <li><a href="entradas.html">Consegui tu entrada</a></li>
+            <li><a href="nosotros.html">Nosotras</a></li>
         </ul>
     </nav>
 
@@ -34,10 +37,33 @@
             <div class="genero">
                 <label for="filtrarGenero">Filtrar por género:</label>
                 <select name="filtrarGenero">
+                    <option value="">--Elegir genero--</option>
                     <option value="Comedia">Comedia</option>
                     <option value="Romance">Romance</option>
                     <option value="Accion">Acción</option>
                     <option value="csficcion">Ciencia-ficcion</option>
+                </select>
+            </div>
+
+             <div class="anio"> <!--se puede agregar antes de -anio- y despues de -otroAnio- -->
+                <label for="filtrarAnio">Filtrar por Año:</label>
+                <select name="desde">
+                    <option value="">--Desde--</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+                 <select name="hasta">
+                    <option value="">--Hasta-</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                    <option value="2025">2025</option>
                 </select>
             </div>
 
@@ -52,6 +78,11 @@
                     <option value="alfabeticaZA">Alfabeticamente(Z-A)</option>
                 </select>
             </div>
+
+            <div class="acciones">
+  <button id="aplicarFiltros">Aplicar filtros</button>
+  <button id="limpiarFiltros">Limpiar filtros</button>
+</div>
         </div>
 
         <!--Aca van las imagenes de las pelis-->

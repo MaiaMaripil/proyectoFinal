@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consegui tu entrada</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="titulo">Titulo</h1>
+        <div class="cajabuscar">
+            <input type="text" class="search-bar" placeholder="Busca tu pelicula">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="proximosEstrenos.html">Proximos Estrenos </a></li>
+            <li><a href="peliculas.html">Peliculas</a></li>
+            <li><a href="entradas.html">Consegui tu entrada</a></li>
+            <li><a href="nosotros.html">Nosotras</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <h3 class="miEntrada">Donde consigo mi entrada?</h3>
+          <div class="entrada">
+           
+                <label for="elegirPelicula">Elegi la pelicula que queres ver</label>
+                <select id="filtrarPelicula" name="filtrarPelicula">
+                    <option value="">--Selecciona una pelicula--</option>
+                    <option value="Peli1">Peli1</option>
+                    <option value="Peli2">Peli2</option>
+                    <option value="Peli3">Peli3</option>
+                </select>
+                <label for="elegirCine">Elegi el cine</label>
+                <select id="filtrarPelicula" name="filtrarPelicula">
+                    <option value="">--Selecciona el cine--</option>
+                    <option value="Peli1">cine1</option>
+                    <option value="Peli2">cine2</option>
+                </select>
+                <button id="aplicarEntrada">Consultar disponibilidad</button>
+            </div>
+            <div id="infoCines"></div>
+
+      
+    </section>
+
+    <footer>
+        <h4 class="redes">Seguinos en nuestras redes!</h4>
+        <ul class="imgRedes">
+            <li><a href=""><img src="img/fb.png" alt="fb" /></a></li>
+            <li><a href=""><img src="img/ig .png" alt="ig" /></a></li>
+            <li><a href=""><img src="img/tiktok.png" alt="tiktok" /></a></li>
+        </ul>
+    </footer>
