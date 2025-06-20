@@ -1,44 +1,48 @@
-body{
+body {
     background-color: #202020;
- font-family: 'Montserrat', sans-serif;
-  color: #fcfcfc;
-  margin: 0;
-  padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfcfc;
+    margin: 0;
+    padding: 0;
 }
 
-nav{
+nav {
     border-top: 2px solid rgb(255, 255, 255);
-    border-bottom:2px solid rgb(255, 255, 255); ;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-footer{
+footer {
     border-top: 2px solid rgb(255, 255, 255);
 }
- button{
-     padding: 10px 10px;
-  font-size: 1em;
-  border-radius: 8px;
-  }
+
+button {
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 8px;
+}
 
 /*header*/
-.titulo  {
+.titulo {
     font-size: 5em;
     font-style: italic;
-    text-shadow:3px 2px  #b31df8;
+    text-shadow: 3px 2px #b31df8;
     padding: 10px 10px 10px 60px;
 }
+
 .encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 60px;
 }
+
 .cajabuscar {
     width: 350px;
     border-right: 0px;
 }
+
 .search-bar {
-    margin:0px;
+    margin: 0px;
     width: 100%;
     padding: 10px 10px 10px 10px;
     border-radius: 40px;
@@ -46,16 +50,19 @@ footer{
     font-size: 0.875em;
     transition: 0.6s all ease-in-out;
 }
+
 .search-bar:focus-visible {
     outline: none;
     box-shadow: 0px 0px 6px 6px #b31df8;
 }
+
 .menu {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     font-size: 1.25em;
-    flex-wrap: wrap; /*evita que se desborde en pantallas chicas*/
+    flex-wrap: wrap;
+    /*evita que se desborde en pantallas chicas*/
     gap: 10px;
 }
 
@@ -65,23 +72,27 @@ a {
     color: #f1edeb;
     text-decoration: none;
 }
+
 a:hover {
     color: #b31df8;
 }
-button{
+
+button {
     background-color: #d27ef8;
     text-decoration: none;
 }
+
 button:hover {
     background-color: #b31df8;
 }
-select{
-     background-color: #261627;
-  color: white;
-  padding: 10px 10px;
-  border: 2px solid #b31df8;
-  border-radius: 10px;
-  font-size: 0.9em;
+
+select {
+    background-color: #261627;
+    color: white;
+    padding: 10px 10px;
+    border: 2px solid #b31df8;
+    border-radius: 10px;
+    font-size: 0.9em;
 }
 
 .cartelera {
@@ -89,18 +100,22 @@ select{
     display: flex;
     justify-content: center;
 }
+
 .sub {
     font-size: 1.25em;
     display: flex;
     justify-content: center;
 }
+
 img {
     width: 90%;
 }
+
 .carousel {
     display: flex;
     overflow-x: auto;
 }
+
 .slide {
     min-width: 100%;
 
@@ -116,21 +131,26 @@ img {
     margin-bottom: 30px;
     align-items: center;
 }
+
 .filtros .genero {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .filtros .orden {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
+.filtros .anio {
 .filtros .año {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -138,6 +158,7 @@ img {
     gap: 20px;
     padding: 20px;
 }
+
 .galeria img {
     width: 100%;
     max-width: 350px;
@@ -145,7 +166,8 @@ img {
     border-radius: 8px;
     border: 2px solid rgb(255, 255, 255);
 }
-.peliculas{
+
+.peliculas {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
@@ -153,19 +175,22 @@ img {
 
 
 /*footer*/
-.imgRedes  {
+.imgRedes {
     list-style-type: none;
     display: flex;
     font-size: 1.25em;
     gap: 15px;
 }
+
 .imgRedes img {
-    width: 30px;    /* ancho fijo para cada imagen */
+    width: 30px;
+    /* ancho fijo para cada imagen */
     height: auto;
     border-radius: 30px;
     border: 2px solid rgb(255, 255, 255);
 }
-.redes{
+
+.redes {
     margin: 10px;
 }
 
@@ -174,41 +199,67 @@ img {
 
 /*nosotros*/
 .miniBio {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0px;
-  margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+font-size: 0.8em;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
 }
+
 .miniBio li {
     background-color: #261627;
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 0px;
-  width: 550px; /* o el tamaño que quieras */
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 0px;
+    width: 550px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-.miniBio h3 {
-   text-align:center;
-   
-}
-.miniBio h4 {
-   text-align:center;
-}
-.nosotros{
-       margin-top: 50px;
-       margin-bottom: 50px;
+
+
+.nosotros {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
-.proximos{
+
+.sugerencia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: start;
+    margin: 30px;
+}
+
+.sugerencia textarea {
+    width: 50%;
+    height: 90px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #b31df8;
+    font-size: 0.9em;
+}
+
+.sugerencia input {
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #b31df8;
+}
+
+
+
+
+.proximos {
     text-align: center;
 }
-.entrada{
+
+.entrada {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -249,10 +300,12 @@ img {
     .galeria {
         grid-template-columns: 1fr 1fr;
     }
-    .galeria img{
+
+    .galeria img {
         max-width: 350px;
         width: 100%;
     }
+
     .filtros {
         flex-direction: column;
         align-items: flex-start;
@@ -260,14 +313,25 @@ img {
         width: 100%;
         padding: 0 10px;
     }
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-    }
+
     .titulo {
         font-size: 3em;
         margin-left: 10px;
+    }
+
+    button {
+        padding: 10px 10px;
+        font-size: 1em;
+        border-radius: 8px;
+    }
+
+    nav {
+        background-color: rgba(69, 53, 71, 0.5);
+        /* violeta traslúcido */
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid #b31df8;
+    }
       }
   
    button{
@@ -286,23 +350,26 @@ img {
 
 /* Media query: moviles, tablets en vertical */
 @media (max-width: 768px) {
-  .titulo {
-    font-size: 2.5em;
-    margin: 0px;
-    text-align: center;
-  }
-.menu{
-    font-size: 1.2em;
-    flex-direction: column;
+    .titulo {
+        font-size: 2.5em;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .menu {
+        font-size: 1.2em;
+        flex-direction: column;
         align-items: center;
         padding: 0px;
-}
-  .encabezado {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
+    }
+
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
 
   .cajabuscar {
     display: flex;
