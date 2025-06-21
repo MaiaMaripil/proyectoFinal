@@ -3,7 +3,7 @@ function saludo(){
     let nombreUsuario= prompt("Bienvenid/o/a, por favor ingrese su nombre");
     alert("Bienvenido "+nombreUsuario);
 }
-
+saludo();
 //para el boton de "quiero mi entrada"
 function alerta(){
 alert("Conseguiste tus entradas!")}
