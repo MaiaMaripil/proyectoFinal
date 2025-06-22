@@ -1,12 +1,13 @@
 //para la pagina de inicio
-function saludo(){
-    let nombreUsuario= prompt("Bienvenid/o/a, por favor ingrese su nombre");
-    alert("Bienvenido "+nombreUsuario);
+function saludo() {
+  let nombreUsuario = prompt("Bienvenido/a, por favor ingrese su nombre");
+  alert("Bienvenido " + nombreUsuario);
 }
-saludo();
+
 //para el boton de "quiero mi entrada"
-function alerta(){
-alert("Conseguiste tus entradas!")}
+function entrada() {
+  alert("Conseguiste tus entradas!")
+}
 
 //para los filtros de las peliculas
 function filtroOrdenar() {
