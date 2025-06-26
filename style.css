@@ -60,7 +60,7 @@ button {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    font-size: 1.25em;
+    font-size: 1.2em;
     flex-wrap: wrap;
     /*evita que se desborde en pantallas chicas*/
     gap: 10px;

@@ -1,18 +1,18 @@
-let asientoSolicitado = prompt("¿Que asiento deseas?");
-const asientoDisponibles = Array.from({ length: 21 }, (_, i) => i + 1);
+let asientoSolicitado = parseInt(prompt("¿Que asiento deseas?"));
+const asientosDisponibles = Array.from({ length: 21 }, (_, i) => i + 1);
 
-function verificarAsiento(asientoDisponibles, asientoSolicitado) {
-    if (asientoDisponibles.includes(asientoSolicitado)) {
+function verificarAsiento(asientosDisponibles, asientoSolicitado) {
+    if (asientosDisponibles.includes(asientoSolicitado) && asientoSolicitado>=0) {
         return `Felicitaciones, el asiento número ${asientoSolicitado} está disponible!`;
-    } //else {
-    //  return `Lo sentimos, el asiento número ${asientoSolicitado} no esta disponible, pero aún quedan ${asientoDisponibles.length} asientos disponibles`;
-    // }
+    } else {
+     return `Lo sentimos, el asiento número ${asientoSolicitado} no esta disponible, vuelva a intentarlo`;
+     }
 }
 
 
-const mensaje = verificarAsiento(asientoDisponibles, asientoSolicitado);
+const mensaje = verificarAsiento(asientosDisponibles, asientoSolicitado);
 alert(mensaje);
 
-console.log(asientoDisponibles);
+//console.log(asientosDisponibles);
 
 
