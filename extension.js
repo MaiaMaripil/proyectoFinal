@@ -1,7 +1,7 @@
 //para la pagina de inicio
 function saludo() {
+   let inicio=document.getElementById('Bienvenida');
   let nombreUsuario = prompt("Bienvenido/a! por favor ingrese su nombre");
-  let inicio=document.getElementById('Bienvenida');
   if(nombreUsuario!=null){
     let cambio= inicio.innerHTML+=" "+nombreUsuario+"!!";
     inicio.style.fontSize='30px';
