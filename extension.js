@@ -3,18 +3,31 @@ function saludo() {
    let inicio=document.getElementById('Bienvenida');
   let nombreUsuario = prompt("Bienvenido/a! por favor ingrese su nombre");
   if(nombreUsuario!=null){
+    sessionStorage.setItem("nombreUsuario", nombreUsuario);
     let cambio= inicio.innerHTML+=" "+nombreUsuario+"!!";
     inicio.style.fontSize='30px';
     console.log(cambio);
   }
 }
-saludo();
 
+function mostrarNombreGuardado() {
+  let inicio = document.getElementById('Bienvenida');
+  const nombreGuardado = sessionStorage.getItem("nombreUsuario");
+//Si ya hay un nombre guardado
+  if (nombreGuardado) {
+    inicio.innerHTML += " " + nombreGuardado + "!!";
+    inicio.style.fontSize = '30px';
+  } else {
+    saludo(); // si no hay nada guardado, pedir el nombre
+  }
+}
+mostrarNombreGuardado();
 
 //para el boton de "quiero mi entrada"
+/*
 function entrada() {
   alert("Conseguiste tus entradas!")
-}
+}*/
 
 //para los filtros de las peliculas
 function filtroOrdenar() {
