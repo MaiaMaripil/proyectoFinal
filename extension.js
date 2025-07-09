@@ -23,6 +23,35 @@ function mostrarNombreGuardado() {
 }
 mostrarNombreGuardado();
 
+
+const apiKey = "775288778129dbdce6e1dcad87ee9d5d"; // <-- pegá tu clave aquí
+
+fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-ES&page=1`)
+  .then(response => response.json())
+  .then(data => mostrarPeliculas(data.results))
+  .catch(error => console.error("Error al cargar pelis:", error));
+
+function mostrarPeliculas(peliculas) {
+  const contenedor = document.getElementById("estrenos");
+
+  peliculas.forEach(peli => {
+    const div = document.createElement("div");
+    div.classList.add("slide");
+
+    div.innerHTML = `
+    <h3>${peli.title}</h3>
+      <img src="https://image.tmdb.org/t/p/original${peli.backdrop_path}" alt="${peli.title}">
+      
+      <p>Estreno: ${peli.release_date}</p>
+      <p>${peli.overview.substring(0, 80)}...</p>
+       <a href="./entradas.html"><button id="quieroEntrada" >Quiero mi entrada!</button></a>
+       
+    `;
+
+    contenedor.appendChild(div);
+  });
+}
+
 //para el boton de "quiero mi entrada"
 /*
 function entrada() {
