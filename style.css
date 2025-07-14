@@ -4,6 +4,7 @@ body {
     color: #fcfcfc;
     margin: 0;
     padding: 0;
+
 }
 
 nav {
@@ -19,6 +20,13 @@ button {
     padding: 10px 10px;
     font-size: 1em;
     border-radius: 8px;
+}
+
+.pelicula a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
 }
 
 /*header*/
@@ -65,10 +73,17 @@ button {
     /*evita que se desborde en pantallas chicas*/
     gap: 10px;
 }
-#Bienvenida{
+
+#Bienvenida {
     text-shadow: 3px 3px 6px #b31df8;
     padding: 0.5em;
-  
+
+}
+
+.subtitulos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /*inicio*/
@@ -115,17 +130,25 @@ img {
     width: 90%;
 }
 
-.carousel {
-    display: flex;
-    overflow-x: auto;
+.imagen-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.slide {
+/* .carousel { 
+    display: flex;
+    overflow-x: auto;
+ } 
+
+ .slide { 
     min-width: 100%;
 
     text-align: center;
     border-right: 2px solid white;
-}
+}*/
+
+
 
 
 /*peliculas*/
@@ -155,13 +178,19 @@ img {
     gap: 10px;
 }
 
+
+/* Estilo para la pagina de Peliculas */
+
+
 .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* 3 columnas iguales */
+
     gap: 20px;
     padding: 20px;
+    justify-items: center;
 }
+
 
 .galeria img {
     width: 100%;
@@ -171,12 +200,34 @@ img {
     border: 2px solid rgb(255, 255, 255);
 }
 
-.peliculas {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+
+
+.pelicula:hover {
+    transform: scale(1.08);
+    z-index: 10;
 }
 
+.sinopsis {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 0 0 10px 10px;
+    transition: opacity 0.3s ease;
+}
+
+.pelicula:hover .sinopsis {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Termina el estilo para la pagina de proximos estrenos */
 
 /*footer*/
 .imgRedes {
@@ -206,7 +257,7 @@ img {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-font-size: 0.8em;
+    font-size: 0.8em;
     flex-wrap: wrap;
     gap: 10px;
     padding: 0px;
@@ -270,6 +321,7 @@ font-size: 0.8em;
     margin-bottom: 30px;
     align-items: center;
 }
+
 .sugerencia {
     display: flex;
     flex-direction: column;
@@ -336,19 +388,21 @@ font-size: 0.8em;
         border-radius: 15px;
         border: 2px solid #b31df8;
     }
-      }
-  
-   button{
-     padding: 10px 10px;
-  font-size: 1em;
-  border-radius: 8px;
-  }
-   nav {
-    background-color: rgba(69, 53, 71, 0.5); /* violeta traslúcido */
+}
+
+button {
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+nav {
+    background-color: rgba(69, 53, 71, 0.5);
+    /* violeta traslúcido */
     padding: 10px;
     border-radius: 15px;
-       border: 2px solid #b31df8;
-  }
+    border: 2px solid #b31df8;
+}
 
 
 
@@ -375,50 +429,53 @@ font-size: 0.8em;
         padding: 10px;
     }
 
-  .cajabuscar {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
+    .cajabuscar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 
-  .search-bar {
-    font-size: 1em;
-  }
-  .galeria {
-        grid-template-columns: 1fr ;
+    .search-bar {
+        font-size: 1em;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
         place-items: center;
     }
-    .galeria img{
+
+    .galeria img {
         max-width: 250px;
         width: 100%;
         place-items: center;
     }
-    .slide img{
+
+    /* .slide img { 
         max-width: 250px;
         width: 100%;
         place-items: center;
+     } */
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 8px;
     }
-  
-  button{
-     padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 8px;
-  }
-   nav {
-    background-color: rgba(69, 53, 71, 0.5); /* violeta traslúcido */
-    padding: 10px;
-    border-radius: 15px;
-       border: 2px solid #b31df8;
-  }
+
+    nav {
+        background-color: rgba(69, 53, 71, 0.5);
+        /* violeta traslúcido */
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid #b31df8;
+    }
+
     .sugerencia {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
-    align-items: center;
-    margin: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+        align-items: center;
+        margin: 30px;
+    }
 }
-}
-
-
-

@@ -1,11 +1,11 @@
 //para la pagina de inicio
 function saludo() {
-   let inicio=document.getElementById('Bienvenida');
+  let inicio = document.getElementById('Bienvenida');
   let nombreUsuario = prompt("Bienvenido/a! por favor ingrese su nombre");
-  if(nombreUsuario!=null){
+  if (nombreUsuario != null) {
     sessionStorage.setItem("nombreUsuario", nombreUsuario);
-    let cambio= inicio.innerHTML+=" "+nombreUsuario+"!!";
-    inicio.style.fontSize='30px';
+    let cambio = inicio.innerHTML += " " + nombreUsuario + "!!";
+    inicio.style.fontSize = '30px';
     console.log(cambio);
   }
 }
@@ -13,7 +13,7 @@ function saludo() {
 function mostrarNombreGuardado() {
   let inicio = document.getElementById('Bienvenida');
   const nombreGuardado = sessionStorage.getItem("nombreUsuario");
-//Si ya hay un nombre guardado
+  //Si ya hay un nombre guardado
   if (nombreGuardado) {
     inicio.innerHTML += " " + nombreGuardado + "!!";
     inicio.style.fontSize = '30px';
@@ -32,18 +32,18 @@ fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language
   .catch(error => console.error("Error al cargar pelis:", error));
 
 function mostrarPeliculas(peliculas) {
-  const contenedor = document.getElementById("estrenos");
+  const contenedor = document.getElementById("estrenando");
 
   peliculas.forEach(peli => {
     const div = document.createElement("div");
-    div.classList.add("slide");
+    div.classList.add("pelicula");
 
     div.innerHTML = `
     <h3>${peli.title}</h3>
+    <div class="imagen-container">
       <img src="https://image.tmdb.org/t/p/original${peli.backdrop_path}" alt="${peli.title}">
-      
-      <p>Estreno: ${peli.release_date}</p>
-      <p>${peli.overview.substring(0, 80)}...</p>
+       <p class="sinopsis">${peli.overview.substring(0, 100)}...</p>
+      </div>
        <a href="./entradas.html"><button id="quieroEntrada" >Quiero mi entrada!</button></a>
        
     `;

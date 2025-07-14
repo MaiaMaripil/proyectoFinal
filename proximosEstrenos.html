@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proximos estrenos</title>
     <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="encabezado">
-         <a href="index.html"> <h1 class="titulo">CTRL+Play</h1></a>
+        <a href="index.html">
+            <h1 class="titulo">CTRL+Play</h1>
+        </a>
         <div class="cajabuscar">
             <input type="text" class="search-bar" placeholder="Busca tu pelicula">
         </div>
@@ -29,11 +31,66 @@
 
     <section>
 
+        <h3 class="subtitulos">Proximos estrenos</h3>
+
+        <!--Filtrar por categoria-->
+        <div class="filtros">
+            <div class="genero">
+                <label for="filtrarGenero">Filtrar por género:</label>
+                <select name="filtrarGenero">
+                    <option value="">--Elegir genero--</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Accion">Acción</option>
+                    <option value="csficcion">Ciencia-ficcion</option>
+                </select>
+            </div>
+
+            <div class="año"> <!--se puede agregar antes de -anio- y despues de -otroAnio- -->
+                <label for="filtrarAnio">Filtrar por Año:</label>
+                <select name="desde">
+                    <option value="">--Desde--</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+                <select name="hasta">
+                    <option value="">--Hasta-</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+
+            <div class="orden">
+                <label for="ordenar">Ordenar por:</label>
+                <select name="ordenar">
+                    <option value="recientes">Más recientes</option>
+                    <option value="antiguas">Más antiguas</option>
+                    <option value="mayorCalificadas">Calificación (mayor a menor)</option>
+                    <option value="menorCalificadas">Calificación (menor a mayor)</option>
+                    <option value="alfabeticaAZ">Alfabeticamente (A-Z)</option>
+                    <option value="alfabeticaZA">Alfabeticamente(Z-A)</option>
+                </select>
+            </div>
+
+            <div class="acciones">
+                <button id="aplicarFiltros">Aplicar filtros</button>
+                <button id="limpiarFiltros">Limpiar filtros</button>
+            </div>
+        </div>
+
         <!--Aca van las imagenes de los proximos estrenos-->
-        <div class="proximos">
-            <h2>Proximos estrenos</h2>
-            <div class="carousel">
-                <div class="slide">
+        <div class="galeria" id="proxestrenos">
+
+            <!-- <div class="carousel"> -->
+            <!-- <div class="slide">
                     <h3>Nombre</h3>
                     <h4>Fecha de estreno</h4>
                     <img src="img/mufasa.png" alt="peli1">
@@ -44,7 +101,7 @@
                     <h4>Fecha de estreno</h4>
                     <img s rc="img/mufasa.png" alt="peli2">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -57,4 +114,6 @@
         </ul>
     </footer>
 </body>
+<script src="./proximos.js"></script>
+
 </html>

@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Todas las pelis</title>
-    <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="encabezado"> 
-        <a href="index.html"> <h1 class="titulo">CTRL+Play</h1></a>
+    <header class="encabezado">
+        <a href="index.html">
+            <h1 class="titulo">CTRL+Play</h1>
+        </a>
         <div class="cajabuscar">
             <input type="text" class="search-bar" placeholder="Busca tu pelicula">
         </div>
@@ -31,7 +33,7 @@
 
     <section>
 
-        <h3 class="peliculas">Estas son todas las pelis</h3>
+        <h3 class="subtitulos">Estas son todas las pelis</h3>
 
         <!--Filtrar por categoria-->
         <div class="filtros">
@@ -46,7 +48,7 @@
                 </select>
             </div>
 
-             <div class="año"> <!--se puede agregar antes de -anio- y despues de -otroAnio- -->
+            <div class="año"> <!--se puede agregar antes de -anio- y despues de -otroAnio- -->
                 <label for="filtrarAnio">Filtrar por Año:</label>
                 <select name="desde">
                     <option value="">--Desde--</option>
@@ -54,16 +56,16 @@
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
                     <option value="2023">2023</option>
-                     <option value="2024">2024</option>
+                    <option value="2024">2024</option>
                     <option value="2025">2025</option>
                 </select>
-                 <select name="hasta">
+                <select name="hasta">
                     <option value="">--Hasta-</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
                     <option value="2023">2023</option>
-                     <option value="2024">2024</option>
+                    <option value="2024">2024</option>
                     <option value="2025">2025</option>
                 </select>
             </div>
@@ -81,20 +83,21 @@
             </div>
 
             <div class="acciones">
-  <button id="aplicarFiltros">Aplicar filtros</button>
-  <button id="limpiarFiltros">Limpiar filtros</button>
-</div>
+                <button id="aplicarFiltros">Aplicar filtros</button>
+                <button id="limpiarFiltros">Limpiar filtros</button>
+            </div>
         </div>
 
         <!--Aca van las imagenes de las pelis-->
-        <div class="galeria">
-           <a href=""><h2>Conclave</h2><img src="img/conclave.png" alt="peli 1" /> 
+        <div class="galeria" id="todaspelis">
+            <!--        <a href=""><h2>Conclave</h2><img src="img/conclave.png" alt="peli 1" /> 
         </a> 
            <a href=""><h2>Moana</h2> <img src="img/moana.png" alt="peli 2" /></a>
            <a href=""><h2>Mufasa</h2><img src="img/mufasa.png" alt="peli 3" /></a> 
             <a href=""><h2>Barbie</h2><img src="img/barbie.webp" alt="peli 4" /></a>
             <a href=""><h2>Avatar</h2><img src="img/avatar.png" alt="peli 5" /></a>
-            <a href=""><h2>Mi villano favorito 4</h2><img src="img/villano4.jpg" alt="peli 6" /></a>
+            <a href=""><h2>Mi villano favorito 4</h2><img src="img/villano4.jpg" alt="peli 6" />
+            </a> -->
         </div>
     </section>
 
@@ -107,4 +110,7 @@
         </ul>
     </footer>
 </body>
+
+<script src="./peliculas.js"></script>
+
 </html>
