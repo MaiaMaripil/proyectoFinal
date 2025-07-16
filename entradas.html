@@ -33,32 +33,35 @@
     <section>
 
         <h3 class="subtitulos">Donde consigo mi entrada?</h3>
-        <div class="entrada">
+        <div class="entrada" id="entradas">
 
-            <label for="elegirPelicula">Elegi la pelicula que queres ver</label>
-            <select id="filtrarPelicula" name="filtrarPelicula">
+           <label for="elegirPelicula">Elegi la pelicula que queres ver</label>
+            <select id="filtrarPelicula" name="filtrarPelicula" >
                 <option value="">--Selecciona una pelicula--</option>
-                <option value="Peli1">Peli1</option>
+               <!--  <option value="Peli1">Peli1</option>
                 <option value="Peli2">Peli2</option>
-                <option value="Peli3">Peli3</option>
-            </select>
+                <option value="Peli3">Peli3</option>-->
+               
+            </select> 
+            <div id="asientosDisp"></div>
+
             <label for="elegirCine">Elegi el cine</label>
-            <select id="filtrarPelicula" name="filtrarPelicula">
+            <select id="elegirCine" name="elegirCine">
                 <option value="">--Selecciona el cine--</option>
-                <option value="Peli1">cine1</option>
-                <option value="Peli2">cine2</option>
+                <option value="Peli1">CTRL+Play</option>
             </select>
 
+ <label for="asientoElegido">Elegí un asiento (1 a 30):</label>
             <button id="asientos" onclick="elegirAsiento()"> Elegir asiento</button>
             <div id="infoAsiento"></div>
-            <script src="entradas.js"></script>
-            <button id="aplicarEntrada"> Consultar disponibilidad</button>
+            
+            <button id="aplicarEntrada" onclick="comprarEntrada()"> Comprar entrada</button>
         </div>
         <div id="infoCines"></div>
 
 
     </section>
-
+<script src="entradas.js"></script>
     <footer>
         <h4 class="redes">Seguinos en nuestras redes!</h4>
         <ul class="imgRedes">

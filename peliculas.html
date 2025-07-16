@@ -48,7 +48,7 @@
                 </select>
             </div>
 
-            <div class="año"> <!--se puede agregar antes de -anio- y despues de -otroAnio- -->
+          <!--  <div class="año"> se puede agregar antes de -anio- y despues de -otroAnio- 
                 <label for="filtrarAnio">Filtrar por Año:</label>
                 <select name="desde">
                     <option value="">--Desde--</option>
@@ -68,22 +68,22 @@
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
                 </select>
-            </div>
+            </div>-->
 
             <div class="orden">
                 <label for="ordenar">Ordenar por:</label>
-                <select name="ordenar">
+                <select name="ordenar" id="ordenarPeliculas">
                     <option value="recientes">Más recientes</option>
                     <option value="antiguas">Más antiguas</option>
-                    <option value="mayorCalificadas">Calificación (mayor a menor)</option>
-                    <option value="menorCalificadas">Calificación (menor a mayor)</option>
+                   <!-- <option value="mayorCalificadas">Calificación (mayor a menor)</option>
+                    <option value="menorCalificadas">Calificación (menor a mayor)</option>-->
                     <option value="alfabeticaAZ">Alfabeticamente (A-Z)</option>
                     <option value="alfabeticaZA">Alfabeticamente(Z-A)</option>
                 </select>
             </div>
 
             <div class="acciones">
-                <button id="aplicarFiltros">Aplicar filtros</button>
+                <button id="aplicarFiltros" onclick="filtros()">Aplicar filtros</button>
                 <button id="limpiarFiltros">Limpiar filtros</button>
             </div>
         </div>

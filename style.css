@@ -79,7 +79,9 @@ button {
     padding: 0.5em;
 
 }
-
+#estrenando{
+    box-shadow: 0px 0px 6px 6px #b31df8;
+}
 .subtitulos {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -247,6 +249,12 @@ img {
 
 .redes {
     margin: 10px;
+    text-align: center;
+}
+.imgRedes{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -321,6 +329,23 @@ img {
     margin-bottom: 30px;
     align-items: center;
 }
+#cantAsientos{
+    font-size: 0.70em;
+    color: #efd8f8;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+#asientos{
+ background-color: #261627;
+    color: white;
+    padding: 10px 10px;
+    border: 2px solid #b31df8;
+    border-radius: 10px;
+    font-size: 0.9em;
+
+}
+
 
 .sugerencia {
     display: flex;
