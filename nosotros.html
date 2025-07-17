@@ -12,7 +12,9 @@
 
 <body>
     <header class="encabezado">
-         <a href="index.html"> <h1 class="titulo">CTRL+Play</h1></a>
+        <a href="index.html">
+            <h1 class="titulo">CTRL+Play</h1>
+        </a>
         <div class="cajabuscar">
             <input type="text" class="search-bar" placeholder="Busca tu pelicula">
         </div>
@@ -34,9 +36,9 @@
             <li>
                 <h3 class="nosotros">NOMBRE: Candela Hernandez</h3>
                 <h4 class="nosotros">Me llamo Candela, tengo 22 años, vivo en Neuquen Capital. <br>
-                    Soy estudiante de Ingenieria Electronica, pero ando realizando  <br>
+                    Soy estudiante de Ingenieria Electronica, pero ando realizando <br>
                     diferentes cursos sobre desarrollo web de Frontend.
-                 </h4>
+                </h4>
             </li>
             <li>
                 <h3 class="nosotros">NOMBRE: Maia Maripil</h3>
@@ -48,13 +50,24 @@
                 </h4>
             </li>
         </ul>
- <div class="sugerencia">
-            <h3>Dejanos tu sugerencia!</h3>
-             <input type="text" class="nombre" placeholder="Nombre">
-             <input type="text" class="nombre" placeholder="Correo electronico">
-            <textarea class="comentario" placeholder="Sugerencia"></textarea>
-           <button id="Enviar">Enviar</button>
+        
+        <div class="sugerencia">
+
+            <form id="formSugerencia">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Sugerencia:</label><br>
+                <textarea id="mensaje" name="mensaje" ></textarea><br><br>
+
+                <button type="submit">Enviar sugerencia</button>
+            </form>
         </div>
+
+<script src="sugerencia.js"></script>
     </section>
     <footer>
         <h4 class="redes">Seguinos en nuestras redes!</h4>
@@ -65,4 +78,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

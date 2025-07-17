@@ -62,7 +62,7 @@ cargarPelis();
 function cargarPelis() {
   const apiKey = "775288778129dbdce6e1dcad87ee9d5d"; // <-- pegá tu clave aquí
 
-  fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-ES&page=1`)
+  fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-ES&region=AR&page=1`)
     .then(response => response.json())
     .then(data => {
       mostrarPeliculas(data.results);

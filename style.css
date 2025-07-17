@@ -265,12 +265,13 @@ img {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    font-size: 0.8em;
     flex-wrap: wrap;
-    gap: 10px;
+    font-size: 0.8em;
+    gap:10px;
     padding: 0px;
-    margin: 0;
-    text-align: center;
+    margin: 0px;
+    
+
 }
 
 .miniBio li {
@@ -278,10 +279,11 @@ img {
     border: 2px solid white;
     border-radius: 20px;
     padding: 0px;
-    width: 550px;
+    width: 45%;
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
 }
 
 
@@ -289,30 +291,6 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-}
-
-.sugerencia {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px;
-    align-items: start;
-    margin: 30px;
-}
-
-.sugerencia textarea {
-    width: 50%;
-    height: 90px;
-    padding: 15px;
-    border-radius: 20px;
-    border: 2px solid #b31df8;
-    font-size: 0.9em;
-}
-
-.sugerencia input {
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid #b31df8;
 }
 
 
@@ -345,24 +323,36 @@ img {
     font-size: 0.9em;
 
 }
-
+.entradas label{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.entradas select{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 
 .sugerencia {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 30px;
-    align-items: start;
-    margin: 30px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    align-items: stretch; 
+    margin-right: auto; /* lo empuja hacia la derecha */
+    margin-left: 30px;
 }
 
 .sugerencia textarea {
-    width: 50%;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* No se pasa de este ancho en pantallas grandes */
     height: 90px;
     padding: 15px;
     border-radius: 20px;
     border: 2px solid #b31df8;
     font-size: 0.9em;
+    box-sizing: border-box; /* Muy importante para evitar que padding rompa el diseño */
 }
 
 .sugerencia input {
@@ -409,9 +399,11 @@ img {
     nav {
         background-color: rgba(69, 53, 71, 0.5);
         /* violeta traslúcido */
-        padding: 10px;
+        padding: 0px;
         border-radius: 15px;
         border: 2px solid #b31df8;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
@@ -490,17 +482,20 @@ nav {
     nav {
         background-color: rgba(69, 53, 71, 0.5);
         /* violeta traslúcido */
-        padding: 10px;
+        padding: 0px;
         border-radius: 15px;
         border: 2px solid #b31df8;
     }
 
-    .sugerencia {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 30px;
-        align-items: center;
-        margin: 30px;
+    .miniBio li{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
+    .miniBio{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+
 }
