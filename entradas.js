@@ -62,7 +62,7 @@ cargarPelis();
 function cargarPelis() {
   const apiKey = "775288778129dbdce6e1dcad87ee9d5d"; // <-- pegá tu clave aquí
 
-  fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-ES&region=AR&page=1`)
+  fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-ES&page=1`)
     .then(response => response.json())
     .then(data => {
       mostrarPeliculas(data.results);
@@ -77,9 +77,8 @@ function mostrarPeliculas(peliculas) {
   peliculas.forEach(peli => {
     const option = document.createElement("option");
     option.value = peli.id;
-    option.textContent = peli.title;
+    option.textContent = peli.title.trim();
     contenedor.appendChild(option);
-    //option.onclick=asientos(peli.id);
   });
 
 }
