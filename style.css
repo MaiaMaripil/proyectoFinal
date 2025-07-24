@@ -404,6 +404,67 @@ footer {
     border: 2px solid #b31df8;
 }
 
+#volverBtn{
+    background-color: #261627;
+    color: white;
+    padding: 10px 10px;
+    border: 2px solid #b31df8;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+#volverBtn:hover {
+    background-color: #a711ec;}
+
+#asientos:hover{
+     background-color: #a711ec;
+}
+
+.detalle {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.detalle img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.detalle-info {
+  max-width: 700px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.cadaPeli {
+  padding: 15px;
+  flex: 1 1 250px;       /* base de 250px, puede crecer o encoger */
+  max-width: 300px;      /* no más de 300px para que no sea gigante */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cadaPeli img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cadaPeli h3 {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
 
 
 
@@ -541,5 +602,21 @@ nav {
         margin: 0 auto;
     }
 
+    .detalle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .detalle img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .detalle-info {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
+
+

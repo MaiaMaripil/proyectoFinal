@@ -24,7 +24,7 @@ function mostrarNombreGuardado() {
 mostrarNombreGuardado();
 
 
-const apiKey = "775288778129dbdce6e1dcad87ee9d5d"; // <-- pegá tu clave aquí
+const apiKey = "775288778129dbdce6e1dcad87ee9d5d";
 
 const indicadores = document.querySelector(".carousel-indicators");
 const inner = document.querySelector(".carousel-inner");
@@ -135,54 +135,3 @@ function cargarCarouselAgrupado(peliculas, porSlide) {
   }
 }
 
-//para los filtros de las peliculas
-function filtroOrdenar() {
-  switch (ordenSeleccionado) {
-    case "recientes":
-      // ordena por las más recientes
-      break;
-    case "antiguas":
-      // ordena por las más antiguas
-      break;
-    case "MayorCalificacion":
-      // ordena por las de mayor calificación
-      break;
-    case "menorCalificacion":
-      // ordena por las de menor calificación
-      break;
-    case "alfabeticamenteAZ":
-      // ordena de la A a la Z
-      break;
-    case "alfabeticamenteZA":
-      // ordena de la Z a la A
-      break;
-    default:
-      // opción por defecto si no coincide con ningún caso
-      break;
-  }
-}
-
-function filtroGenero() {
-  switch (generoSeleccionado) {
-    case "comedia":
-      // solo muestra las pelis de comedia
-      break;
-    case "romance":
-      // solo muestra las pelis de romance
-      break;
-    case "accion":
-      // solo muestra las pelis de acción
-      break;
-    case "cienciaFiccion":
-      // solo muestra las pelis de ciencia ficción
-      break;
-  }
-}
-
-function filtroAnio() {
-  if (desde > hasta) {
-    alert("Error en la selección del rango de años");
-  } else {
-    // muestra las pelis desde la variable "desde" hasta la variable "hasta"
-  }
-}
