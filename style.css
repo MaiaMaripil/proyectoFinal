@@ -70,6 +70,7 @@ button {
     justify-content: space-around;
     font-size: 1.2em;
     flex-wrap: wrap;
+   
     /*evita que se desborde en pantallas chicas*/
     gap: 10px;
 }
@@ -79,9 +80,11 @@ button {
     padding: 0.5em;
 
 }
-#estrenando{
+
+#estrenando {
     box-shadow: 0px 0px 6px 6px #b31df8;
 }
+
 .subtitulos {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -120,13 +123,16 @@ select {
     font-size: 1.875em;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .sub {
     font-size: 1.25em;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
+
 
 img {
     width: 90%;
@@ -136,6 +142,27 @@ img {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+}
+
+/* Carousel */
+#carouselProximos {
+    margin-bottom: 100px;
+
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    width: 100%;
+    background-color: #202020;
+}
+
+#carouselProximos .carousel-inner img {
+
+    height: 200px;
+    object-fit: contain;
+    background-color: #202020;
 }
 
 /* .carousel { 
@@ -232,6 +259,13 @@ img {
 /* Termina el estilo para la pagina de proximos estrenos */
 
 /*footer*/
+
+footer {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+}
+
 .imgRedes {
     list-style-type: none;
     display: flex;
@@ -251,7 +285,8 @@ img {
     margin: 10px;
     text-align: center;
 }
-.imgRedes{
+
+.imgRedes {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -267,10 +302,10 @@ img {
     justify-content: space-around;
     flex-wrap: wrap;
     font-size: 0.8em;
-    gap:10px;
+    gap: 10px;
     padding: 0px;
     margin: 0px;
-    
+
 
 }
 
@@ -283,7 +318,8 @@ img {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte al ancho total */
 }
 
 
@@ -307,15 +343,16 @@ img {
     margin-bottom: 30px;
     align-items: center;
 }
-#cantAsientos{
+
+#cantAsientos {
     font-size: 0.70em;
     color: #efd8f8;
     margin: 0px;
     padding-top: 0px;
 }
 
-#asientos{
- background-color: #261627;
+#asientos {
+    background-color: #261627;
     color: white;
     padding: 10px 10px;
     border: 2px solid #b31df8;
@@ -323,11 +360,13 @@ img {
     font-size: 0.9em;
 
 }
-.entradas label{
+
+.entradas label {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
-.entradas select{
+
+.entradas select {
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -339,20 +378,24 @@ img {
     margin: 30px auto;
     width: 90%;
     max-width: 700px;
-    align-items: stretch; 
-    margin-right: auto; /* lo empuja hacia la derecha */
+    align-items: stretch;
+    margin-right: auto;
+    /* lo empuja hacia la derecha */
     margin-left: 30px;
 }
 
 .sugerencia textarea {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 600px; /* No se pasa de este ancho en pantallas grandes */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 600px;
+    /* No se pasa de este ancho en pantallas grandes */
     height: 90px;
     padding: 15px;
     border-radius: 20px;
     border: 2px solid #b31df8;
     font-size: 0.9em;
-    box-sizing: border-box; /* Muy importante para evitar que padding rompa el diseño */
+    box-sizing: border-box;
+    /* Muy importante para evitar que padding rompa el diseño */
 }
 
 .sugerencia input {
@@ -487,15 +530,16 @@ nav {
         border: 2px solid #b31df8;
     }
 
-    .miniBio li{
+    .miniBio li {
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .miniBio{
+
+    .miniBio {
         width: 80%;
         margin: 0 auto;
     }
-    
+
 
 }
